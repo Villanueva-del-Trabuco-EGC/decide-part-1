@@ -22,6 +22,12 @@ msgstr "Decide"
 msgid "logout"
 msgstr "Salir"
 
+msgid "or"
+msgstr "------o------"
+
+msgid "logoutFrom"
+msgstr "Salir de "
+
 msgid "vID"
 msgstr "ID de la votación"
 
@@ -33,6 +39,9 @@ msgstr "Identificarse"
 
 msgid "LoginGitHub"
 msgstr "Identificarse con GitHub"
+
+msgid "LoginTwitter"
+msgstr "Identificarse con Twitter"
 
 msgid "LoginFacebook"
 msgstr "Identificarse con Facebook"
@@ -46,10 +55,10 @@ msgstr "Error"
 msgid "Conglatulations. Your vote has been sent"
 msgstr "¡Enhorabuena! Tu voto se ha enviado"
 
-msgid "registered_as_1"
+msgid "register_as_1"
 msgstr "Registrado en "
 
-msgid "registered_as_2"
+msgid "register_as_2"
 msgstr " como "
 
 msgid "vote_with"

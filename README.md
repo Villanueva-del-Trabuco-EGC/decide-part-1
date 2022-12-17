@@ -1,8 +1,8 @@
-[![Python application](https://github.com/TheNeoStormZ/decide/actions/workflows/django.yml/badge.svg)](https://github.com/TheNeoStormZ/decide/actions/workflows/django.yml)
+[![Python application](https://github.com/Villanueva-del-Trabuco-EGC/decide/actions/workflows/django.yml/badge.svg)](https://github.com/Villanueva-del-Trabuco-EGC/decide/actions/workflows/django.yml)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb7e81e8215e4e4ea60dc19d4a029773)](https://www.codacy.com/gh/TheNeoStormZ/decide/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheNeoStormZ/decide&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eec9bc073f1241868929559c7baa2fba)](https://www.codacy.com/gh/Villanueva-del-Trabuco-EGC/decide/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Villanueva-del-Trabuco-EGC/decide&amp;utm_campaign=Badge_Grade)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/eb7e81e8215e4e4ea60dc19d4a029773)](https://www.codacy.com/gh/TheNeoStormZ/decide/dashboard?utm_source=github.com&utm_medium=referral&utm_content=TheNeoStormZ/decide&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/eec9bc073f1241868929559c7baa2fba)](https://www.codacy.com/gh/Villanueva-del-Trabuco-EGC/decide/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Villanueva-del-Trabuco-EGC/decide&utm_campaign=Badge_Coverage)
 
 
 

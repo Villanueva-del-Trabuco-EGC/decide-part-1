@@ -2,20 +2,26 @@ from django.contrib.auth.models import User
 from .models import Census
 
 def get_user_atributes():
-    user = User.objects.all().values()[0]
     atributes_list = []
 
-    counter = 0
-    for atribute in user.keys():
-        if not atribute == 'id' and not atribute == 'password':
-            atributes_list.append((counter, atribute))
-            counter += 1
+    if User.objects.all().values() != []:
+        user = User.objects.all().values()[0]
+        counter = 0
+        for atribute in user.keys():
+            if not atribute == 'id' and not atribute == 'password':
+                atributes_list.append((counter, atribute))
+                counter += 1
 
     return atributes_list
 
 # csvtext -> Header1,Header2,Header3/value1,value2,value3/value1,value2,value3/
 def get_csvtext_and_data(form_values, census):
     atributes_list = get_user_atributes()
+
+    if atributes_list == []:
+        atributes_list.append('id,username/None,NoUser')
+        return atributes_list
+
     voters_data = []
     headers = []
     

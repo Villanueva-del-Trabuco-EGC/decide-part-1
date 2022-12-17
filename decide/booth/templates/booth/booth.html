@@ -55,13 +55,13 @@
             <!--LOGIN CON GITHUB-->
 
             {% if not user.is_authenticated and not user.is_staff %}
-            <h2>------or------</h2>
+            <h2>{% trans "or" %}</h2>
             <a id='githubButton' v-if="signup" href="{% url 'social:begin' 'github' %}?next={{ request.path }}" class="btn btn-secondary">
                 <span>{% trans "LoginGitHub" %}</span>
             </a>
 
             <a id='twitterButton' v-if="signup" href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" class="btn btn-secondary">
-                <span>Login with Twitter</span>
+                <span>{% trans "LoginTwitter" %}</span>
             </a>
 
             {% elif not user.is_staff %}
@@ -70,7 +70,7 @@
                 {% trans "vote_with" %} {{user.social_auth.get.provider}}
             </b-button>
             <a id='logoutButton' href="/booth/logout" v-if="signup" class="btn btn-danger">
-                <span>Logout from {{user.social_auth.get.provider}}</span>
+                <span>{% trans "logoutFrom" %}{{user.social_auth.get.provider}}</span>
             </a>
             {% endif %}
 

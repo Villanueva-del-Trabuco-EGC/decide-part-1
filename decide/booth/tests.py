@@ -22,6 +22,7 @@ from voting.models import Voting, Question, QuestionOption
 from django.utils import timezone
 from mixnet.models import Auth
 from django.conf import settings
+from django.utils.translation import activate
 
 from social_django.models import UserSocialAuth
 from social_django.views import get_session_timeout
@@ -33,6 +34,7 @@ class BoothTranslationTestCase(StaticLiveServerTestCase):
 
     def setUp(self):
         self.base = BaseTestCase()
+        activate('es_ES')
         self.base.setUp()
         super().setUp()    
 

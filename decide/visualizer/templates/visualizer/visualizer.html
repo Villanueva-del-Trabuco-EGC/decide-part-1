@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load i18n static %}
 {% load static %}
 
@@ -23,12 +23,20 @@
 {% endblock %}
 
 {% block content %}
+      
     <div id="app-visualizer">
         <!-- Navbar -->
         <b-navbar type="dark" variant="secondary">
             <b-navbar-brand tag="h1"> {% trans "decide" %}</b-navbar-brand>
         </b-navbar>
-
+        <form id="LanguageForm" action="" method="post">
+            {% csrf_token %}
+            <label for="Language"></label>
+            <fieldset>
+                {{formulario}}
+                <input id="boton_cambiar_idioma" type="submit" value="Cambiar idioma">
+            </fieldset>
+        </form>
         <div v-if="voting.question.multioption" class="voting container">
             <h1>[[ voting.id ]] - [[ voting.name ]]</h1>
 
@@ -97,7 +105,7 @@
                     </table>
                 </div>
             </br>
-                <div>
+                <div v-if="voting.end_date" id="graphs_div">
                     <h2 id="graphs_title" class="heading">{% trans "graph_info" %}</h2>  
 
                     <div class="chart-container" style="position: relative; height:40vh; width:80vw">
@@ -149,4 +157,5 @@
     </script> 
     <script src="{% static 'graph.js' %}"></script>
 </body>
+
 {% endblock %}

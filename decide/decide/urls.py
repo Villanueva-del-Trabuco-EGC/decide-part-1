@@ -26,6 +26,7 @@ urlpatterns = [
     path('doc/', schema_view),
     path('gateway/', include('gateway.urls')),
     path('', include('social.apps.django_app.urls', namespace='social')),
+    path('i18n', include('django.conf.urls.i18n')),
     
 ]
 
